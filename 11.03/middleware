@@ -1,0 +1,17 @@
+const express= require("express");
+const app =    express();
+
+
+
+const filter=(req,resp,next)=>{
+    console.log(filter)
+    next()
+}
+     
+app.use(filter);
+
+app.get('/',(req,resp)=>{
+    console.log("hello brother")
+
+});
+app.listen(6000);
