@@ -25,7 +25,7 @@ app.get("/employeee",(request,response)=>{
     mongoClient.connect(durl,{useNewUrlParser:true})
 .then(client=>{
     let db = client.db('mydbs')
-   db.collection("employeee").find().forEach(doc => arry.push(doc))
+   db.collection("employeee").find()(doc => arry.push(doc))
     .catch(err=>console.log(err))
     
     .finally(()=>{
@@ -41,15 +41,15 @@ app.get("/employeee",(request,response)=>{
 });
 
 app.post("/employeee",(resquest,respond)=>{
-let data = request.body;
+let data = resquest.body;
 mongoClient.connect(durl,{newUrlParser:true})
 .then(client=>{
     let db = client.db("mydbs")
     db.collection("employeee").insertOne(data)
-    .then((result)=>response.json(result))
+    .then((result)=>respond.json(result))
 
 
-    .catch(err=>response.json({"error":"sorry failed"}))
+    .catch(err=>respond.json({"error":"sorry failed"}))
     .finally(()=>client.close());
 
 })

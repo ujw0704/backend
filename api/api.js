@@ -13,7 +13,7 @@ app.get("/employeee", (request, response) => {
     mongoClient.connect(dbURL, {useNewUrlParser:true})
     .then(client => {
         let db = client.db('mydbs')
-        db.collection("employeee").find().forEach(doc => arr.push(doc))
+        db.collection("employeee").find()(doc => arr.push(doc))
         .catch(err => console.log(err))
         .finally(() => {
             response.json(arr);

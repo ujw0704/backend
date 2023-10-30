@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+  body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: aliceblue;
+  }  
+.container{
+    width: 95%;
+    margin:auto;
+   
+}
+.nav{
+     display: flexbox;
+     justify-content: space-between;
+    text-align: center;
+     flex-wrap: wrap;
+     padding:25px 0;
+}.input{
+    text-align: center;
+    
+}
