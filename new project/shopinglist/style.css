@@ -1,0 +1,51 @@
+ *{
+padding: 0;
+margin:0;
+
+
+}
+
+body{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     background-color: yellow;
+
+}
+
+
+
+
+.groceries{
+   
+    width: 90%;
+    width: 600px;
+    min-height: 100vh;
+    margin:auto;
+    background: white;
+    box-shadow: 10px ,10px, 24px, 0 rgba(16, 24, 129, 0.075);
+
+}
+.groceries-list h1{
+    font-size: 2.5rem;
+  margin-top: 1 em;
+}
+.groceries-list  i{
+    font-size: 2rem;
+    color: aqua;
+
+}
+.groceries  input{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    outline:0;
+    border:0;
+    font-size: 2rem;
+    border-bottom: 3px solid black;
+    font-size: 1.5rem;
+    width: 70%;
+}
+#allitems h2{
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 2rem;
+
+}
