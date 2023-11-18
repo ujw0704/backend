@@ -1,0 +1,17 @@
+class Pizza{
+    constructor(){
+
+        this.orderNumber = 0;
+    }
+
+
+    order(){
+        this.orderNumber++;
+}
+
+displayorder (){
+    console.log(`current number:${this.orderNumber}`)
+}
+
+}
+module.exports =Pizza;
